@@ -5,7 +5,8 @@ import PatchFrom from './PatchForm';
 const MemeDetails = () => {
   const {id} = useParams();
   
-  const url = 'http://localhost:8000/memes/'
+  //const url = 'http://localhost:8000/memes/'
+  const url = 'http://ec2-3-7-45-215.ap-south-1.compute.amazonaws.com:8000/memes/'
   const [details,setDetails] = useState([]);
   const fetchDetails = async () => {
     try{
